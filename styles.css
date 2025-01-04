@@ -1,4 +1,7 @@
 /* Global Styles */
+html {
+  width: 100%;
+}
 body {
   background-color: rgb(0, 0, 0);
   text-align: center;
@@ -283,89 +286,94 @@ body {
   font-size: 23px;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  .jumbotron {
-    flex-direction: column;
-    height: auto;
+/* Mobile styles - for screens smaller than or equal to 600px */
+@media (max-width: 800px) {
+  /* Adjust Navigation Bar */
+  .navBar nav {
+    text-align: center;
+    font-size: 33px;
+    padding: 5px;
   }
 
+  .introbox {
+    width: 100%;
+  }
+
+  /* Reduce text size */
+  .introbox h1 {
+    font-size: 38px;
+  }
+
+  .introbox p {
+    font-size: 15px;
+  }
+
+  /* Adjust the layout of Panels */
   .leftpanel,
   .rightpanel {
     width: 100%;
-    text-align: center;
-  }
-
-  .imagecontainer img {
-    max-width: 70%;
-    margin: 0 auto;
-  }
-
-  .introbox h1 {
-    font-size: 50px;
-  }
-
-  .introbox p {
-    font-size: 20px;
-  }
-
-  .introbox button {
-    width: 80px;
-    height: 40px;
-    font-size: 16px;
-  }
-
-  .navBar {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .project-grid,
-  .technologies-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    width: 90%;
-  }
-
-  .snake-container {
-    flex-direction: column;
-    gap: 30px;
-  }
-}
-
-@media (max-width: 480px) {
-  .jumbotron {
     padding: 10px;
   }
 
-  .introbox h1 {
-    font-size: 40px;
+  .rightpanel {
+    margin-top: 20px;
   }
 
-  .introbox p {
-    font-size: 18px;
+  .abitaboutme {
+    font-size: 24px;
   }
 
-  .project-grid,
-  .technologies-grid {
+  .description_container p {
+    font-size: 20px;
+  }
+
+  .tech {
+    font-size: 24px;
+  }
+
+  .techdesc p {
+    font-size: 20px;
+  }
+
+  /* Adjust Project Cards */
+  .project-grid {
     grid-template-columns: 1fr;
   }
 
-  .tech-card img {
-    width: 40%;
+  .project-card {
+    padding: 15px;
+    font-size: 16px;
   }
 
-  .navBar {
-    font-size: 18px;
+  .techcontainer {
+    width: 100%;
+  }
+
+  /* Adjust Technologies Grid */
+  .technologies-grid {
+    grid-template-columns: 2fr 2fr;
+  }
+
+  .tech-card {
+    font-size: 7px;
     padding: 10px;
   }
 
-  #snakeCanvas {
-    width: 300px;
-    height: 300px;
+  /* Snake Game Section */
+  .snake-container {
+    flex-direction: column;
+    align-items: center;
   }
 
-  #startButton {
-    font-size: 14px;
-    padding: 8px 15px;
+  /* Adjust Canvas Size for Snake Game */
+  #snakeCanvas {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Leaderboard Section */
+  .leaderboard {
+    padding: 10px;
+    font-size: 18px;
   }
 }

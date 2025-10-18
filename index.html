@@ -1,194 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Angelo Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="root">
-      <div>
-        <!-- Navigation Bar -->
-        <div class="navBar">
-          <nav>
-            <a href="https:www.linkedin.com/in/angeloboggio">LinkedIn</a> |
-            <a href="https:www.github.com/angeloboggio">Github</a>
-          </nav>
-        </div>
-
-        <!-- Intro Section -->
-        <div class="intro-container"></div>
-        <div class="jumbotron">
-          <div class="leftpanel">
-            <div class="introbox">
-              <h1>Hi, I'm Angelo</h1>
-              <p>
-                I am a Back-end / Full-Stack Developer. Driven by innovation and
-                design, I've pursued software engineering in order to create a
-                better experiences for users.
-              </p>
-              <div class="introbutton">
-                <a href="/AngeloRafaelBoggio.pdf" download="AngelosResume.pdf">
-                  <button>Resume</button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="rightpanel">
-            <div class="imagecontainer">
-              <img src="/images/techyguy.svg" alt="Techy Guy Illustration" />
-            </div>
-          </div>
-        </div>
-
-        <!-- About Section -->
-        <div class="about-container">
-          <div class="about">
-            <div class="abitaboutme">
-              <h3>A bit about me. . .</h3>
-            </div>
-
-            <div class="description_container">
-              <p>
-                I am a software engineer specializing in backend development
-                with experience in frontend technologies. Proficient in
-                JavaScript frameworks such as Node.js, React, and TypeScript, I
-                create scalable applications and efficient systems. Passionate
-                about building impactful software solutions.
-              </p>
-            </div>
-
-            <div class="tech">
-              <h3>Technologies and projects</h3>
-            </div>
-            <div class="techdesc">
-              <p>
-                Using a combination of cutting edge technologies and reliable
-                open-source software I build user-focused, performant apps and
-                websites for smartphones, tablets and desktops.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Projects Section -->
-        <div class="projects" id="projects">
-          <div class="project-grid">
-            <div class="project-card">
-              <h2>📊 INIT-FIU Dashboard</h2>
-              <p>
-                A dynamic dashboard built with React and TypeScript, enhancing
-                usability by 30%.
-              </p>
-            </div>
-            <div class="project-card">
-              <h2>🗂️ Task Manager API</h2>
-              <p>
-                A backend API built with Go and PostgreSQL, enabling efficient
-                task management.
-              </p>
-            </div>
-            <div class="project-card">
-              <h2>🛒 E-commerce Platform</h2>
-              <p>
-                A secure backend for an e-commerce platform with cart and
-                checkout features.
-              </p>
-            </div>
-            <div class="project-card">
-              <h2>🛜 Raspberry Pi Reverse Proxy</h2>
-              <p>
-                Utilized a raspberry pi to self host my own web pages and
-                utilize it as a database for files I can quickly SSH into.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-----Technologies Section-->
-        <div class="techcontainer">
-          <div class="technologies-grid">
-            <div class="tech-card">
-              <img src="/images/js.png" />
-              <h1>JavaScript</h1>
-            </div>
-
-            <div class="tech-card">
-              <img src="/images/mongo.webp" />
-              <h1>MongoDB</h1>
-            </div>
-
-            <div class="tech-card">
-              <img src="/images/mysql.webp" />
-              <h1>MySQL</h1>
-            </div>
-
-            <div class="tech-card">
-              <img src="/images/python.png" />
-              <h1>Python</h1>
-            </div>
-            <div class="tech-card">
-              <img src="/images/git.png" />
-              <h1>Git</h1>
-            </div>
-            <div class="tech-card">
-              <img src="/images/ts.png" />
-              <h1>TypeScript</h1>
-            </div>
-            <div class="tech-card">
-              <img src="/images/react.png" />
-              <h1>React</h1>
-            </div>
-            <div class="tech-card">
-              <img src="/images/go.png" />
-              <h1>GO</h1>
-            </div>
-            <div class="tech-card">
-              <img src="/images/nodejs.png" />
-              <h1>NodeJS</h1>
-            </div>
-            <div class="tech-card">
-              <img src="/images/expressjs.png" />
-              <h1>ExpressJS</h1>
-            </div>
-            <div class="tech-card">
-              <img src="/images/html.png" />
-              <h1>HTML</h1>
-            </div>
-            <div class="tech-card">
-              <img src="/images/css.jpg" />
-              <h1>CSS</h1>
-            </div>
-          </div>
-        </div>
-
-        <!-- Snake Game Section -->
-        <div class="snake-container">
-          <div class="snake-game">
-            <h1>Take a break and play some Snake!</h1>
-            <p>(W => UP) (S => DOWN) (A => LEFT) (D => RIGHT)</p>
-            <canvas id="snakeCanvas" width="500" height="500"></canvas>
-            <button id="startButton">Start Game</button>
-          </div>
-
-          <!-- Leaderboard Section -->
-          <div class="leaderboard">
-            <h2>Leaderboard</h2>
-            <ol id="topScores">
-              <!-- Top scores will be dynamically inserted here -->
-            </ol>
-          </div>
-        </div>
-
-        <!-- Contact Form Section -->
-        <div class="form-section">
-          <form>Email Me</form>
-        </div>
-
-        <!-- Script -->
-        <script src="script.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angelo Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page-content" aria-label="content">
+    <div class="view">
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.82/build/spline-viewer.js"></script>
+<spline-viewer url="https://prod.spline.design/y56iUjAK5zpfPc-s/scene.splinecode"></spline-viewer>
+       <header>
+       <h1>> Angelo</h1>
+        <p></p>
+       </header> 
+      <p>
+          <span style="color: #FFFFFF; font-size: 1.2em;">"A jack of all trades is a master of none, but oftentimes better than a master of one"</span>
+          <br>
+<br>
+          about: miami-man, grew up playing baseball and video games. When I decided to leave baseball behind, my curiosity for game development led me to pursuing my B.S. in Computer Science 
+          <br>
+          interests: reading, touching grass, music, and billiards <span style="font-size:2.2em;">⓼</span>
+          <br>
+          Cats: Ash, Bando, and Junji 
+          <br>
+      </p>
+      <ul>
+        <li>
+          <b>links</b>
+        </li>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/angeloboggio">linkedin</a>
+          </li>
+          <li>
+            <a href="https://www.github.com/angeloboggio">github</a>
+          </li>
+        </ul>
+      </ul>
       </div>
-    </div>
+    </main>
   </body>
 </html>

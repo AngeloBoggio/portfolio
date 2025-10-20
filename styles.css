@@ -17,8 +17,17 @@ body {
   background-color: #000;
 }
 
+.discussions{
+  max-width: 900px;
+  gap: 1em;
+  margin: 2em auto;
+  padding: 1em 2rem;
+  background-color: #000;
+}
+
 a {
   color: #fff;
+  text-decoration: none;
 }
 
 li {
@@ -33,3 +42,4 @@ li::before {
   left: 0;
   color: #4AF262;
 }
+
